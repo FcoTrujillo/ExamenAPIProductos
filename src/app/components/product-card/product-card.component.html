@@ -1,0 +1,8 @@
+<div class="card shadow mt-3">
+    <img [src]="miProduct.image" class="card-img-top" alt="{{ miProduct.name }}">
+    <div class="card-body">
+      <h4 class="card-title">{{ miProduct.name }}</h4>
+      <h5>{{ miProduct.price }}€</h5>
+      <a [routerLink]="['/producto', miProduct._id]" class="btn btn-primary">Ver detalle</a>
+    </div>
+  </div>
